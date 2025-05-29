@@ -1,0 +1,14 @@
+20250527	13:51:10	2cdb5361-ed7d-4cf9-8dbc-87f6fa2412e3	Not allowed by CORS
+20250527	13:51:10	9aa4867e-3408-49ef-baf2-6e9e927e4f20	Not allowed by CORS
+20250529	13:33:14	c580c133-bd3f-482b-a063-b3974b377685	ENOENT: no such file or directory, stat 'C:\NodeJSCourse\08TUT\routes\views\index.html'
+20250529	13:33:14	2b5b2ded-4195-4f14-9869-bcfd041a33bb	ENOENT: no such file or directory, stat 'C:\NodeJSCourse\08TUT\routes\views\index.html'
+20250529	13:56:00	bb244f78-d186-47b8-b18f-35474474f1f9	Cannot read properties of undefined (reading 'fistname')
+20250529	16:02:51	a65cab18-6dd0-459a-8356-df94bcb87f75	Cannot read properties of undefined (reading 'id')
+20250529	16:05:02	9f00aa64-579d-4f86-aa82-814d886e5b84	Expected ',' or '}' after property value in JSON at position 26 (line 3 column 9)
+20250529	16:05:12	745a3082-feaf-4bdb-a9de-9cce533a7f5f	Cannot read properties of undefined (reading 'id')
+20250529	16:06:40	babd3c0a-da3d-4e4e-b7e1-909180cfdc82	Cannot read properties of undefined (reading 'id')
+20250529	16:07:12	fae69a86-147f-478b-81da-715473773296	Cannot read properties of undefined (reading 'id')
+20250529	16:07:34	e4d0cb7a-94ab-4eea-881f-0e92c1033497	Cannot read properties of undefined (reading 'id')
+20250529	16:22:04	6450c5c1-d335-4f14-9008-016abc735454	Expected double-quoted property name in JSON at position 12 (line 3 column 1)
+20250529	16:26:16	1d44f38e-ee20-4c29-bf5a-3d964766bbe6	Expected double-quoted property name in JSON at position 37 (line 4 column 1)
+20250529	16:26:21	cbfb245d-25a9-49ea-a375-5b69114d2f3f	employeeFirstName is not defined
