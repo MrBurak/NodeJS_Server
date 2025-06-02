@@ -1,11 +1,11 @@
-const whiteList=['https://www.google.com'];
+const allowedOrigins=require("./allowedOrigins")
 
 const corsOptions=
 {
     origin : (origin, callback)=>
     {
         //origin found or no origin==undefined
-        if(whiteList.indexOf(origin) !== -1 || !origin)
+        if(allowedOrigins.indexOf(origin) !== -1 || !origin)
         {
             callback(null, true);
             console.log(`CORS Sucess | Origin : ${origin}`)

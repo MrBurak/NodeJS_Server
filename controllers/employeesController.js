@@ -7,7 +7,7 @@ const data=
 
 const list = (req, res)=>
 {
-    res.json(data.employees);
+    res.status(200).json(data.employees);
 }
 
 const insert= (req, res)=>{

@@ -18,3 +18,6 @@
 20250602	16:50:17	6e72b29b-0fd9-4747-b93e-f57781d7e5c2	otherUsers is not iterable
 20250602	16:51:17	640d78f4-bb3d-4721-bf7a-0a6e402b5389	res.cookies is not a function
 20250602	17:37:50	7612956d-c6df-490d-96bd-ebcaad9d64af	jwt is not a function
+20250602	19:58:48	228491da-f321-4e46-af85-7fe908a7593d	user is not defined
+20250602	20:00:15	d6be731c-6ec1-4e73-8732-f926c78851fc	user is not defined
+20250602	20:00:32	d7695194-a94d-4627-9c9b-644cc76e0dd9	user is not defined
