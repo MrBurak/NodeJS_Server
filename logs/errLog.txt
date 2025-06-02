@@ -12,3 +12,6 @@
 20250529	16:22:04	6450c5c1-d335-4f14-9008-016abc735454	Expected double-quoted property name in JSON at position 12 (line 3 column 1)
 20250529	16:26:16	1d44f38e-ee20-4c29-bf5a-3d964766bbe6	Expected double-quoted property name in JSON at position 37 (line 4 column 1)
 20250529	16:26:21	cbfb245d-25a9-49ea-a375-5b69114d2f3f	employeeFirstName is not defined
+20250602	15:02:22	0b61f3c1-9155-49d7-8e84-ed1bd4e605f7	Expected ',' or '}' after property value in JSON at position 21 (line 3 column 3)
+20250602	15:04:10	e9934f90-f231-4f81-9c99-fe0d066f03ab	Cannot destructure property 'user' of 'req.user' as it is undefined.
+20250602	15:07:26	9b20f1d9-e157-4c71-aaa5-d5a701ab281a	Cannot destructure property 'user' of 'req.user' as it is undefined.
