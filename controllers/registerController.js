@@ -15,7 +15,7 @@ const handleNewUser= async (req, res) =>
     //check for duplications
 
     const duplicate=userDB.users.find(person=> person.username===user);
-    if(duplicate) return res.status(409).json({'message': "Username already exists."});
+    if(duplicate) return res.sendStatus(409);
 
     try
     {
