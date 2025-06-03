@@ -1,1 +1,2 @@
-[{"username":"Burak","password":"$2b$10$Ej9YW.pv6xfxH9aIwauB/uHF.bUs8Kd/mgNQ9pNSeDDx2RhObh3ky"}]
+[{"username":"Burak2","password":"$2b$10$OxwOsu8gIN7c5iZ7O03WAO7BOGzWSW9PmwNlEfXGobM9s3W6OMMqy","roles":{"User":1003}},
+{"username":"Burak","password":"$2b$10$czXOQd4PcTpXPnWxiTJNd.KQRCVPxLWPa2f9YXI/y14aZInP57VeO","roles":{"Admin":1001,"Editor":1002,"User":1003}}]

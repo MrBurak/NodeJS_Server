@@ -20,7 +20,7 @@ const handleNewUser= async (req, res) =>
     try
     {
         const hashedPwd = await bcrytp.hash(pwd, 10);
-        const newUser= {'username':user, 'password': hashedPwd};
+        const newUser= {'username':user, 'password': hashedPwd, 'roles': {"User":1003}};
         userDB.setUsers([...userDB.users, newUser]);
         await fsPromises.writeFile
         (

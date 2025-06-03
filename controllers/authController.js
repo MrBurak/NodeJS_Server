@@ -12,6 +12,8 @@ require('dotenv').config();
 const fsPromises=require('fs').promises;
 const path=require('path');
 
+const {cookieOptionCreate}=require('../config/cookieOptions')
+
 
 
 
@@ -25,16 +27,25 @@ const handleLogin= async (req, res) =>
     const match = await bcrytp.compare(pwd, foundUser.password);
     if(match)
     {
-        const accessToken=jwt.sign(
-            {"username":foundUser.username},
-            process.env.ACCESS_TOKEN_SECRET,
-            {expiresIn:'30s'}
-        );
+        const roles=Object.values(foundUser.roles);
 
+        const accessToken=jwt.sign(
+            {
+                "UserInfo":
+                {
+                    "username":foundUser.username,
+                    "roles":roles
+                }
+                
+            },
+            process.env.ACCESS_TOKEN_SECRET,
+            {expiresIn:'1d'}
+        );
+        
         const refressToken=jwt.sign(
             {"username":foundUser.username},
             process.env.REFRESH_TOKEN_SECRET,
-            {expiresIn:'1d'}
+            {expiresIn:'1M'}
         );
         
         const otherUsers=userDB.users.filter(person => person.username !== foundUser.username);
@@ -45,7 +56,7 @@ const handleLogin= async (req, res) =>
                 path.join(__dirname, '..', 'model', 'users.json'),
                 JSON.stringify(userDB.users)
             );
-        res.cookie('jwt', refressToken, { httpOnly:true, sameSite:'None', secure:true,  maxAge: 24 * 60 * 60 * 1000});
+        res.cookie('jwt', refressToken, cookieOptionCreate);
 
         return res.status(201).json({accessToken});
     }
