@@ -13,7 +13,6 @@ const logEvent = async (message, logName) =>
         const file=path.join(__dirname, '../', folderName, logName);
         const dateTime=`${format(new Date, 'yyyyMMdd\tHH:mm:ss')}`;
         const logItem=`${dateTime}\t${uuid()}\t${message}`;
-        console.log(logItem);
         try
         {
             await folderManager.checkFolder(folderName);

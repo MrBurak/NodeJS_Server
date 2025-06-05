@@ -29,7 +29,6 @@ const handleNewUser= async (req, res) =>
         );
 
         
-        console.log(userDB.users);
         res.status(201).json({'Message':`new user ${user} created`})
         
     }

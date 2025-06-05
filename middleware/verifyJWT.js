@@ -1,6 +1,6 @@
 const { json } = require('express');
 const jwt = require('jsonwebtoken');
-require('dotenv').config();
+
 
 const verifyJWT =(req,res, next) => 
 {
